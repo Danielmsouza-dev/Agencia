@@ -1,129 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agência Web</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
 
-    <!-- CSS externo -->
-    <link rel="stylesheet" href="estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
-    <header>
-        <div class="container nav-container">
-            <h1 class="logo">Agência Web</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header class="header">
+<div class="container header__container">
 
-    <!-- ===== HOME ===== -->
-    <section id="home" class="banner">
-        <div class="container">
-            <h2>Transformamos ideias em experiências digitais incríveis</h2>
-            <p>Design moderno, estratégia e inovação para sua marca crescer online.</p>
-            <a href="#contato" class="btn">Fale Conosco</a>
-        </div>
-    </section>
+<h1 class="header__logo">Agência Web</h1>
 
-    <!-- ===== SOBRE ===== -->
-    <section id="sobre" class="section">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>
-                Somos uma agência de design digital especializada em criar experiências
-                visuais impactantes e soluções web personalizadas.
-                Nosso foco é unir criatividade, estratégia e tecnologia
-                para entregar resultados reais.
-            </p>
-        </div>
-    </section>
+<nav class="nav">
+<ul class="nav__menu">
+<li><a class="nav__link" href="#home">Home</a></li>
+<li><a class="nav__link" href="#sobre">Sobre</a></li>
+<li><a class="nav__link" href="#servicos">Serviços</a></li>
+<li><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+<li><a class="nav__link" href="#contato">Contato</a></li>
+</ul>
+</nav>
 
-    <!-- ===== SERVIÇOS ===== -->
-    <section id="servicos" class="section bg-light">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
+</div>
+</header>
 
-            <div class="grid-servicos">
-                <div class="card">
-                    <h3>Design Gráfico</h3>
-                    <p>Criação de identidades visuais modernas e estratégicas.</p>
-                </div>
+<section id="home" class="banner">
+<div class="container">
 
-                <div class="card">
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites rápidos, responsivos e otimizados para SEO.</p>
-                </div>
+<h2 class="banner__title">Transformamos ideias em experiências digitais</h2>
 
-                <div class="card">
-                    <h3>Branding</h3>
-                    <p>Construção e posicionamento de marca no mercado digital.</p>
-                </div>
+<p class="banner__text">
+Criamos design moderno e soluções web para empresas crescerem online.
+</p>
 
-                <div class="card">
-                    <h3>Marketing Digital</h3>
-                    <p>Estratégias para aumentar alcance e conversões.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<a href="#contato" class="button">Fale Conosco</a>
 
-    <!-- ===== DEPOIMENTOS ===== -->
-    <section id="depoimentos" class="section">
-        <div class="container">
-            <h2>Depoimentos</h2>
+</div>
+</section>
 
-            <div class="depoimentos">
-                <div class="depoimento">
-                    <p>"A Agência Web transformou totalmente nossa presença online!"</p>
-                    <span>- Cliente Fictício 1</span>
-                </div>
+<section id="sobre" class="section">
+<div class="container">
 
-                <div class="depoimento">
-                    <p>"Profissionalismo e criatividade em alto nível."</p>
-                    <span>- Cliente Fictício 2</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<h2>Sobre Nós</h2>
 
-    <!-- ===== CONTATO ===== -->
-    <section id="contato" class="section bg-light">
-        <div class="container">
-            <h2>Contato</h2>
+<p>
+Somos uma agência especializada em design digital e desenvolvimento web.
+Nosso objetivo é ajudar empresas a crescerem com soluções modernas,
+criativas e eficientes no ambiente online.
+</p>
 
-            <div class="contato-container">
-                <div class="info-contato">
-                    <p><strong>Endereço:</strong> Joinville - SC</p>
-                    <p><strong>Telefone:</strong> (47) 99999-9999</p>
-                    <p><strong>Email:</strong> contato@agenciaweb.com</p>
-                </div>
+</div>
+</section>
 
-                <form class="form-contato">
-                    <input type="text" placeholder="Seu Nome" required>
-                    <input type="email" placeholder="Seu Email" required>
-                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<section id="servicos" class="section section--light">
 
-    <footer>
-        <p>© 2026 Agência Web - Todos os direitos reservados</p>
-    </footer>
+<div class="container">
+
+<h2>Nossos Serviços</h2>
+
+<div class="services__grid">
+
+<div class="service-card">
+<h3 class="service-card__title">Design Gráfico</h3>
+<p>Criação de identidade visual profissional para sua marca.</p>
+</div>
+
+<div class="service-card">
+<h3 class="service-card__title">Desenvolvimento Web</h3>
+<p>Criação de sites rápidos, modernos e responsivos.</p>
+</div>
+
+<div class="service-card">
+<h3 class="service-card__title">Branding</h3>
+<p>Estratégias para fortalecer sua marca no mercado.</p>
+</div>
+
+<div class="service-card">
+<h3 class="service-card__title">Marketing Digital</h3>
+<p>Planejamento para aumentar sua presença online.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="depoimentos" class="section">
+
+<div class="container">
+
+<h2>Depoimentos</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"A Agência Web melhorou totalmente nosso site."</p>
+<span class="testimonial__author">Cliente 1</span>
+</div>
+
+<div class="testimonial">
+<p>"Equipe muito profissional e criativa."</p>
+<span class="testimonial__author">Cliente 2</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contato" class="section section--light">
+
+<div class="container">
+
+<h2>Contato</h2>
+
+<div class="contact__container">
+
+<div class="contact__info">
+<p><strong>Endereço:</strong> Joinville - SC</p>
+<p><strong>Telefone:</strong> (47) 99999-9999</p>
+<p><strong>Email:</strong> contato@agenciaweb.com</p>
+</div>
+
+<form class="contact__form">
+
+<input class="contact__input" type="text" placeholder="Seu Nome" required>
+
+<input class="contact__input" type="email" placeholder="Seu Email" required>
+
+<textarea class="contact__textarea" rows="5" placeholder="Mensagem" required></textarea>
+
+<button class="button" type="submit">Enviar</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Agência Web - Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>

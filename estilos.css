@@ -1,169 +1,211 @@
-/* ===== RESET ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
+body{
+font-family:'Poppins',sans-serif;
+line-height:1.6;
+color:#333;
 }
 
-/* Container central */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
-/* ===== HEADER ===== */
-header {
-    background: #111;
-    color: white;
-    padding: 1rem 0;
+/* SEÇÕES */
+
+.section{
+padding:5vh 0;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.section--light{
+background:#f4f4f4;
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
+/* BOTÃO */
+
+.button{
+display:inline-block;
+background:#00bcd4;
+color:white;
+padding:0.8rem 1.5rem;
+border-radius:5px;
+text-decoration:none;
+border:none;
+cursor:pointer;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
+.button:hover{
+opacity:0.9;
 }
 
-.menu a:hover {
-    color: #00bcd4;
+/* HEADER */
+
+.header{
+background:#111;
+color:white;
+padding:1rem 0;
 }
 
-/* ===== BANNER ===== */
-.banner {
-    height: 90vh;
-    background: linear-gradient(to right, #111, #333);
-    color: white;
-    display: flex;
-    align-items: center;
-    text-align: center;
+.header__container{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.banner h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.header__logo{
+font-size:1.5rem;
+font-weight:600;
 }
 
-.btn {
-    display: inline-block;
-    background: #00bcd4;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    border: none;
-    cursor: pointer;
+/* NAV */
+
+.nav__menu{
+list-style:none;
+display:flex;
+gap:2rem;
 }
 
-/* ===== SECTIONS ===== */
-.section {
-    padding: 5vh 0;
+.nav__link{
+color:white;
+text-decoration:none;
+font-weight:500;
 }
 
-.bg-light {
-    background: #f4f4f4;
+.nav__link:hover{
+color:#00bcd4;
 }
 
-/* ===== GRID SERVIÇOS ===== */
-.grid-servicos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+/* BANNER */
+
+.banner{
+height:90vh;
+background:linear-gradient(to right,#111,#333);
+color:white;
+display:flex;
+align-items:center;
+text-align:center;
 }
 
-.card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
+.banner__title{
+font-size:2.5rem;
+margin-bottom:1rem;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.banner__text{
+margin-bottom:1rem;
 }
 
-/* ===== DEPOIMENTOS ===== */
-.depoimentos {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
+/* SERVIÇOS */
+
+.services__grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:2rem;
+margin-top:2rem;
 }
 
-.depoimento {
-    background: #eee;
-    padding: 2rem;
-    border-radius: 10px;
-    flex: 1;
+.service-card{
+background:white;
+padding:2rem;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-/* ===== CONTATO ===== */
-.contato-container {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
+.service-card:hover{
+transform:translateY(-5px);
 }
 
-.form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    flex: 1;
+.service-card__title{
+margin-bottom:0.5rem;
 }
 
-input, textarea {
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+/* DEPOIMENTOS */
+
+.testimonials{
+display:flex;
+gap:2rem;
+margin-top:2rem;
 }
 
-/* ===== FOOTER ===== */
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    background: #111;
-    color: white;
+.testimonial{
+background:#eee;
+padding:2rem;
+border-radius:10px;
+flex:1;
 }
 
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
+.testimonial__author{
+display:block;
+margin-top:1rem;
+font-weight:600;
+}
 
-    .menu {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
+/* CONTATO */
 
-    .depoimentos {
-        flex-direction: column;
-    }
+.contact__container{
+display:flex;
+gap:2rem;
+margin-top:2rem;
+}
 
-    .contato-container {
-        flex-direction: column;
-    }
+.contact__info{
+flex:1;
+}
 
-    .banner h2 {
-        font-size: 1.8rem;
-    }
+.contact__form{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:1rem;
+}
+
+.contact__input,
+.contact__textarea{
+padding:0.8rem;
+border:1px solid #ccc;
+border-radius:5px;
+width:100%;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:2rem 0;
+background:#111;
+color:white;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:768px){
+
+.nav__menu{
+flex-direction:column;
+gap:1rem;
+text-align:center;
+}
+
+.testimonials{
+flex-direction:column;
+}
+
+.contact__container{
+flex-direction:column;
+}
+
+.banner__title{
+font-size:1.8rem;
+}
+
 }
