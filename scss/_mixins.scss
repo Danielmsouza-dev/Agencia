@@ -1,0 +1,25 @@
+@use 'variaveis' as *;
+
+// MIXIN BOTÃO
+@mixin botao {
+  background: $cor-primaria;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+// MIXIN FLEX
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// MIXIN RESPONSIVO
+@mixin mobile {
+  @media (max-width:768px) {
+    @content;
+  }
+}

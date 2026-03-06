@@ -1,0 +1,31 @@
+@use 'variaveis' as *;
+
+// RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// BODY
+body {
+  font-family: $fonte-principal;
+  color: $cor-texto;
+  line-height: 1.6;
+}
+
+// CONTAINER
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+// SEÇÕES
+.section {
+  padding: $espacamento * 2 0;
+
+  &--light {
+    background: $cor-clara;
+  }
+}
